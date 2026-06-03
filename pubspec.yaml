@@ -1,0 +1,110 @@
+name: flutter_base_app
+description: "Base Flutter app template with full auth, Riverpod, go_router, Firebase, Google/Apple Sign-In."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # HTTP
+  dio: ^5.7.0
+  http: ^1.4.0
+
+  # State management & routing
+  flutter_riverpod: ^2.6.1
+  go_router: ^14.6.2
+
+  # Form validation
+  formz: ^0.8.0
+
+  # Firebase & Auth
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.4.1
+  firebase_messaging: ^15.2.5
+  google_sign_in: ^6.2.2
+  sign_in_with_apple: ^6.1.4
+
+  # Storage
+  shared_preferences: ^2.3.4
+
+  # Environment
+  flutter_dotenv: ^5.2.1
+
+  # UI
+  flutter_svg: ^2.0.16
+  top_snackbar_flutter: ^3.2.0
+  flutter_spinkit: ^5.2.1
+  animate_do: ^4.2.0
+  bottom_picker: ^2.11.2
+  flutter_cupertino_date_picker_fork: ^1.0.7
+  flutter_cupertino_datetime_picker: ^3.0.0
+
+  # Notifications
+  flutter_local_notifications: ^19.0.0
+
+  # Utilities
+  logger: ^2.5.0
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  url_launcher: ^6.3.2
+  permission_handler: ^11.4.0
+  path_provider: ^2.1.5
+
+  # Image
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/images/icon/
+    - assets/images/logo/
+    - assets/images/splash_screen/
+    - assets/images/login_signup/
+    - assets/images/onboarding/
+    - assets/loaders/
+
+  fonts:
+    - family: Nohemi
+      fonts:
+        - asset: fonts/Nohemi-Bold-BF6438cc587b5b5.ttf
+    - family: AvenirMedium
+      fonts:
+        - asset: fonts/AvenirLTStd-Medium.otf
+    - family: AvenirRegular
+      fonts:
+        - asset: fonts/AvenirNextLTPro-Regular.otf
+    - family: AvenirBold
+      fonts:
+        - asset: fonts/AvenirNextLTPro-Bold.otf
+    - family: AvenirDemiBold
+      fonts:
+        - asset: fonts/avenir-next-demi-bold.ttf
+    - family: AvenirItalic
+      fonts:
+        - asset: fonts/AvenirNextLTPro-It.otf
+    - family: AvenirHeavy
+      fonts:
+        - asset: fonts/avenir-next-heavy.ttf

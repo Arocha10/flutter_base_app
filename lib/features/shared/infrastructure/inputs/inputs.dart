@@ -1,0 +1,11 @@
+export 'email.dart';
+export 'password.dart';
+export 'confirm_password.dart';
+export 'date_of_birth.dart';
+export 'family_name.dart';
+export 'given_name.dart';
+export 'username.dart';
+export 'username_email.dart';
+export 'gender.dart';
+export 'terms_and_conditions.dart';
+export 'policies.dart';
